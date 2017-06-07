@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<title>Book TAmplate By GOurav</title>
+    <head>
+      <link rel="stylesheet" type="text/css" href="css/slick.css"/> 
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/tabs.css">
+       <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+     
+        <!----this page css ---->
+              
+   <style>
+	   
+	   @media screen and (min-width: 992px) {
+        .modal-lg {
+          width: 950px; /* New width for large modal */
+			height: 700px;
+        }
+    }
+	   
+.timebox {
+    background-image: url("book.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px;
+    margin-top: 60px;
+}
+
+	   
+	   .modalbox {
+    background-image: url("book.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px;
+    margin-top: 0px;
+}
+	   
+	   
+	   
+	   .tw {
+		   position: relative;
+    right: -350px;
+    top: 30px;
+	   }
+       
+	   .slider {
+		   position: relative;
+    right: 163px;
+    top: 10px;
+		   
+	   }
+        
+	   .sgin{
+		   position: relative;
+    right: -720px;
+	float: center;	   
+    top: -430px;
+		   
+	   }
+	   
+	   .modelarea {
+		   position: relative;
+    left: 170px;
+	float: center;	   
+    top: 50px;
+		   right: -200;
+		   
+	   }
+	   
+        </style>
+        </head>
+    
+    
+    
+
+<body>
+<a href="#largeModal" data-toggle="modal"><IMG STYLE="position:absolute; TOP:6px; LEFT:640px; WIDTH:128px; HEIGHT:128px" SRC="red.png"></a>
+
+        <div class="timebox" style="max-width:100%;">
+    <div class="tw" id="time"  style="width:500px;"> 
+       
+    </div>
+    
+    			<!---first--->
+    
+  				<div class="slider autoplay" style="width:310px;" >
+					<div><div class="image"><img data-lazy="img.png"/></div></div>
+					<div><div class="image"><img data-lazy="img.png"/></div></div>
+					<div><div class="image"><img data-lazy="img.png"/></div></div>
+				  <div><div class="image"><img data-lazy="img.png"/></div></div>
+					<div><div class="image"><img data-lazy="img.png"/></div></div>
+					<div><div class="image"><img data-lazy="img.png"/></div></div>
+				</div>
+				
+				<!---secend --->
+				
+				<div class="slider autoplay" style="width:310px;" >
+					<div><div class="image"><img data-lazy="img.png"/></div></div>
+					<div><div class="image"><img data-lazy="img.png"/></div></div>
+					<div><div class="image"><img data-lazy="img.png"/></div></div>
+					<div><div class="image"><img data-lazy="img.png"/></div></div>
+					<div><div class="image"><img data-lazy="img.png"/></div></div>
+					<div><div class="image"><img data-lazy="img.png"/></div></div>
+				</div>
+			
+			<!--- third --->
+			
+			<div class="slider autoplay" style="width:310px;" >
+					<div><div class="image"><img data-lazy="img.png"/></div></div>
+					<div><div class="image"><img data-lazy="img.png"/></div></div>
+					<div><div class="image"><img data-lazy="img.png"/></div></div>
+					<div><div class="image"><img data-lazy="img.png"/></div></div>
+					<div><div class="image"><img data-lazy="img.png"/></div></div>
+					<div><div class="image"><img data-lazy="img.png"/></div></div>
+				</div>
+			
+			<div class="sgin" style="width:250px; height:300px; ">
+						
+			<!---< main tabs code start here login sgin in --->
+			
+			
+			<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">SIGN IN</button>
+  <button class="tablinks" onclick="openCity(event, 'Paris')">SIGN UP</button>
+  
+</div>
+
+<div id="London" class="tabcontent">
+    <form action="#">
+    
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
+    </div>
+    <div class="form-group">
+      <label for="pwd">Password:</label>
+      <input type="password" data-minlength="8" class="form-control" id="pwd" placeholder="Enter password" name="pwd" required>
+    </div>
+       <button type="submit" class="btn btn-default">Submit</button>
+  </form>
+  
+  </div>
+  
+  
+<div id="Paris" class="tabcontent">
+
+		 <form action="#">
+    <div class="form-group">
+      <label for="email">Name:</label>
+      <input type="text" class="form-control" id="name" placeholder="Enter your name" name="name" required>
+    </div>
+     <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
+    </div>
+    <div class="form-group">
+      <label for="email">phone number:</label>
+      <input type="number" class="form-control" id="email" placeholder="Enter phone number" name="name" required>
+    </div>
+    <center>       <button type="submit" class="btn btn-default">Submit</button></center>
+  </form>
+			
+			 
+			  
+			    </div>
+</div>
+			
+			<!---< end here --->
+			
+			
+			<!--- bootstrap model start here --->
+			
+			<!-- Trigger the modal with a button -->
+
+  <!-- Modal -->
+  
+    <div id="largeModal" class="modal">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+      
+        <div class="modal-body">
+        <div class="modal-header">         
+</div> <div class="modalbox">
+    
+      <div class="modelarea" style="width: 600px;">
+      <div class="row">
+    <div class="col-sm-4" style="background-color:lavender;"><button type="button"  class="btn btn-info" data-toggle="collapse" data-target="#demo">cat 1</button>
+  <div id="demo" class="collapse"><li>Topic 1</li><li>Topic 2</li><li>Topic 3</li><li>Topic 4</li><li>Topic 5</li><li>Topic 1</li><li>Topic 2</li><li>Topic 3</li><li>Topic 4</li><li>Topic 5</li> 
+  </div></div>
+    <div class="col-sm-4" style="background-color:lavenderblush;"><button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo1">cat 2</button>
+  <div id="demo1" class="collapse"><li>Topic 1</li><li>Topic 2</li><li>Topic 3</li><li>Topic 4</li><li>Topic 5</li><li>Topic 1</li><li>Topic 2</li><li>Topic 3</li><li>Topic 4</li><li>Topic 5</li> 
+		</div></div>
+    <div class="col-sm-4" style="background-color:lavender;"><button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo2">cat 3</button>
+  <div id="demo2" class="collapse"><li>Topic 1</li><li>Topic 2</li><li>Topic 3</li><li>Topic 4</li><li>Topic 5</li><li>Topic 1</li><li>Topic 2</li><li>Topic 3</li><li>Topic 4</li><li>Topic 5</li>
+  </div></div>
+  </div>
+  
+</div>  
+      </div>
+       
+       
+       
+       
+       
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+		<!-- end here bootstrap model --->	
+			
+			
+			
+			
+			
+			<div>
+    </div>
+
+    </div>
+        </body>
+
+
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+		<script type="text/javascript" src="js/slick.js"></script>
+   	<script type="text/javascript" src="js/scripts.js"></script>
+   	<script type="text/javascript" src="js/tabs.js"></script>
+    
+    <script type="text/javascript">
+     $('.autoplay').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2000,
+		 arrows: false,
+});
+    </script>
+    
+    
+    
+    
+    
+    <!----for date time ---->
+    
+    <script type='text/javascript'>//<![CDATA[
+window.onload=function(){
+document.getElementById("time").innerHTML = formatAMPM();
+
+
+function formatAMPM() {
+var d = new Date(),
+    minutes = d.getMinutes().toString().length == 1 ? '0'+d.getMinutes() : d.getMinutes(),
+    hours = d.getHours().toString().length == 1 ? '0'+d.getHours() : d.getHours(),
+    ampm = d.getHours() >= 12 ? 'pm' : 'am',
+    months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'],
+    days = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+return days[d.getDay()]+' '+months[d.getMonth()]+' '+d.getDate()+' '+d.getFullYear()+' '+hours+':'+minutes+ampm;
+}
+}//]]> 
+
+</script>
+<!---- end java script for date time ---->
+
+</html>
