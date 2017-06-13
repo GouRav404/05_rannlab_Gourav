@@ -1,0 +1,194 @@
+<html>
+    <title>book temp</title>
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+     
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/> 
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>
+<div class="container" id="image1">
+<div class="row">
+<div class="col-md-6 col-xs-12">
+<div class="row">
+
+        <p id="time2"></p>
+        <script>
+        function date_time()
+        {
+          var dt = new Date();
+          document.getElementById("time2").innerHTML = dt;
+          setTimeout(function(){ date_time(); }, 1000);
+       }
+        date_time();
+        </script>
+     
+</div>
+<div class="row" id="r1">
+<div id="slider2">
+        
+       <div class="slider autoplay"  >
+          <div><div class="image"><img data-lazy="img.png"/></div></div>
+          <div><div class="image"><img data-lazy="img.png"/></div></div>
+          <div><div class="image"><img data-lazy="img.png"/></div></div>
+          <div><div class="image"><img data-lazy="img.png"/></div></div>
+          <div><div class="image"><img data-lazy="img.png"/></div></div>
+          <div><div class="image"><img data-lazy="img.png"/></div></div>
+        </div>
+
+        <div class="slider autoplay"  >
+          <div><div class="image"><img data-lazy="img.png"/></div></div>
+          <div><div class="image"><img data-lazy="img.png"/></div></div>
+          <div><div class="image"><img data-lazy="img.png"/></div></div>
+          <div><div class="image"><img data-lazy="img.png"/></div></div>
+          <div><div class="image"><img data-lazy="img.png"/></div></div>
+          <div><div class="image"><img data-lazy="img.png"/></div></div>
+        </div>
+      
+      
+      
+      <div class="slider autoplay">
+          <div><div class="image"><img data-lazy="img.png"/></div></div>
+          <div><div class="image"><img data-lazy="img.png"/></div></div>
+          <div><div class="image"><img data-lazy="img.png"/></div></div>
+          <div><div class="image"><img data-lazy="img.png"/></div></div>
+          <div><div class="image"><img data-lazy="img.png"/></div></div>
+          <div><div class="image"><img data-lazy="img.png"/></div></div>
+        </div> 
+
+        </div>   
+</div>
+</div>
+
+
+<div class="col-md-6 col-xs-12" id="c2">
+<div class="row" id="r4">
+<div class="dropdown" id="d">
+        <button class="btn btn-info dropdown-toggle" type="button" data-toggle="dropdown">Page Bookmark
+        <span class="caret"></span></button>
+          
+          <ul class="dropdown-menu with multi-column columns-3">
+            <div class="row">
+              <div class="col-sm-4">
+                <ul class="multi-column-dropdown">
+                  <li><a href="#">Category 1</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Topic 1</a></li>
+                  <li><a href="#">topic 2</a></li>
+                  
+                  <li><a href="#">Topic 3</a></li>
+                  
+                  <li><a href="#">Topic 4</a></li>
+                </ul>
+              </div>
+              <div class="col-sm-4">
+                <ul class="multi-column-dropdown">
+                   <li><a href="#">Category 2</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Topic 1</a></li>
+                  <li><a href="#">Topic 2</a></li>
+                  
+                  <li><a href="#">Topic 3</a></li>
+                  
+                  <li><a href="#">Topic 4</a></li>
+                </ul>
+              </div>
+               <div class="col-sm-4">
+                <ul class="multi-column-dropdown">
+                   <li><a href="#">Category 3</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Topic 1</a></li>
+                  <li><a href="#">Topic 2</a></li>
+                  
+                  <li><a href="#">Topic 3</a></li>
+                  
+                  <li><a href="#">Topic 4</a></li>
+                </ul>
+              </div>
+            </div>
+          </ul>
+
+</div>
+</div>      
+<div class="row" id="r5">
+<ul class="nav nav-tabs" id="n">
+        <li class="active"><a data-toggle="tab" href="#signup">SIGN-UP</a></li>
+        <li><a data-toggle="tab" href="#login">LOGIN</a></li>
+        </ul>
+
+        <div class="tab-content">
+            <div id="signup" class="tab-pane fade in active">
+               <form id="form1">
+                  <div class="form-group">
+                  <br>
+                  <label for="inputname">Name:</label>
+                  <input type="text" class="form-control" id="inputname" placeholder="Your name" required >
+                  </div>
+                  
+                  <div class="form-group">
+                  <label for="mobile">Mobile NO:</label>
+                  <input type="text" class="form-control"  pattern="^\d{11}$" id="mobile" placeholder="Mobile number" required >
+                  
+                  </div>
+                  
+                  <div class="form-group">
+                  <label for="email">Email id:</label>
+                  <input type="email" class="form-control"  id="email" placeholder="Email id" required >
+                  </div>
+
+                  <div class="form-group">
+                  <label for="inputPassword">Password</label>
+                 <input type="password" minlength="10" class="form-control" id="inputPassword" placeholder="Password" required>
+                 <div class="help-block">Minimum of 10 characters</div>
+                </div>
+               <br>
+                <button type="submit" class="btn btn-success">Submit</button>
+               </form> 
+     
+            </div>
+            <div id="login" class="tab-pane fade">
+              <form  id="form2">
+                  <div class="form-group">
+                  <br>
+                  <label for="usr">Email Id:</label>
+                  <input type="email" name="eml" class="form-control" id="email" placeholder="Email id" required>
+                  </div>
+                  <div class="form-group">
+                  <br>
+                  <label for="usr">Password:</label>
+                  <input type="password1" class="form-control" id="pass" placeholder="password" required>
+                  </div>
+                  <br>
+                  <button type="submit" class="btn btn-danger">LOGIN</button>
+               </form>
+
+            </div>
+    
+        </div>
+</div>
+</div>
+</div>
+        </div>   
+    </body>
+     
+<!---- end java script for slider ---->  
+        
+    
+		<script type="text/javascript" src="js/slick.js"></script>
+   
+    
+    <script type="text/javascript">
+     $('.autoplay').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2000,
+		 arrows: false,
+});
+    </script>
+</html>

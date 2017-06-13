@@ -1,0 +1,126 @@
+#image1
+{
+	background-image: url('book.png');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: contain;
+    background-color: whitesmoke;
+	height: 100vh;
+	width: 100%;
+	margin: 0;
+}
+#time2
+{
+	padding-left: 30%;
+	padding-top: 5%;
+	font-size: 18px;
+	
+}
+
+
+#c2
+{
+	padding-left: 5%;
+}
+#n
+{
+	padding-top: 15%;
+	width:60%;
+}
+
+
+#r4
+{
+	padding-top: 3%;
+	height: 10%
+}
+#r5
+{
+	height: 90%;
+}
+#form1
+{
+	width:60%;
+}
+
+#slider2
+ {
+ width: 450px; 
+ margin-left: 30%;
+}
+
+#form2
+{
+	width:60%;
+}
+.dropdown-menu
+{
+	min-width:500px;
+	min-height:200px;
+}
+
+.dropdown-menu li a
+{
+	padding: 10px 15px;
+}
+
+.multi-column-dropdown
+{
+	list-style: none;
+	margin:0px;
+	padding:0px;
+}
+.multi-column-dropdown li a
+{
+	display: block;
+	clear: both;
+	color:#333;
+	white-space: normal;
+
+}
+
+.multi-column-dropdown li a:hover{
+	text-decoration:none;
+	color:#262626;
+	background-color: #999;
+}
+
+@media only screen and (max-width: 800px) 
+{
+
+
+    #slider2
+    {
+      float: left;
+      left: 0%;
+      width:100%;
+}
+    #time2
+    {
+      float: left;
+      padding-left: 5%;
+    }
+   
+    #form1
+    {
+      width:100%;
+    }
+
+    #form2
+    {
+      width:100%;
+    }
+    #n
+    {
+      width:100%;
+    }
+    #d
+    {
+      float: left;
+    }
+
+    #image1
+    {background-image: none;
+      background-color: white;}
+}
